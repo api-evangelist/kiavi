@@ -1,8 +1,25 @@
 aid: kiavi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kiavi.png
 name: Kiavi
-description: 'Kiavi is a company surfaced as a portfolio company of cowboy-ventures, ribbit-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Kiavi (formerly LendingHome) is a technology-driven private lender for residential real
+  estate investors, providing fix-and-flip bridge loans, new-construction financing, and DSCR rental
+  loans across 49 states plus Washington, D.C. The company has originated more than $30 billion in loans
+  and funded over 100,000 investment properties, pairing a digital application and portfolio-management
+  experience with institutional capital. Kiavi is backed by Cowboy Ventures and Ribbit Capital. As of
+  this enrichment pass Kiavi publishes no public developer API, OpenAPI, or developer portal; its public
+  surface is a marketing site, a real-estate-investing blog, legal/policy pages, and a HackerOne-based
+  security vulnerability disclosure program.'
 url: https://raw.githubusercontent.com/api-evangelist/kiavi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
+- Real Estate
+- Lending
+- Mortgage
+- Financial Services
+- Proptech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/kiavi-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.kiavi.com/legal/security
+- type: DomainSecurity
+  url: security/kiavi-domain-security.yml
 - type: Website
   url: https://www.kiavi.com
+- type: Blog
+  url: https://www.kiavi.com/blog
+- type: PrivacyPolicy
+  url: https://www.kiavi.com/legal/privacy
+- type: TermsOfService
+  url: https://www.kiavi.com/legal/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
